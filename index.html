@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Teacher | التحضير الاحترافي للمعلمين</title>
+  <title>المعلم المتميز | التحضير الاحترافي للمعلمين</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -144,34 +144,37 @@
       background-color: #e68900;
     }
     
-    /* Language Switcher */
+    /* Language Switcher - Centered and Smaller */
     .language-switcher {
       position: fixed;
-      top: 100px;
-      left: 20px;
-      z-index: 1000;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1001;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 5px;
+      background-color: white;
+      padding: 5px;
+      border-radius: 30px;
+      box-shadow: var(--shadow);
     }
     
     .lang-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       background-color: white;
       border-radius: 50%;
-      box-shadow: var(--shadow);
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       cursor: pointer;
       transition: var(--transition);
     }
     
     .lang-btn:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
     
     .lang-btn.active {
@@ -531,11 +534,11 @@
       font-size: 0.9rem;
     }
     
-    /* WhatsApp Button */
+    /* WhatsApp Button - Right Side */
     .whatsapp-btn {
       position: fixed;
       bottom: 30px;
-      left: 30px;
+      right: 30px;
       background-color: #25D366;
       color: white;
       width: 60px;
@@ -563,7 +566,7 @@
       border-radius: 30px;
       font-size: 0.9rem;
       font-weight: 600;
-      right: 70px;
+      left: 70px;
       white-space: nowrap;
       opacity: 0;
       visibility: hidden;
@@ -573,6 +576,11 @@
     .whatsapp-btn:hover .whatsapp-text {
       opacity: 1;
       visibility: visible;
+      left: 80px;
+    }
+    
+    body.english .whatsapp-btn:hover .whatsapp-text {
+      left: auto;
       right: 80px;
     }
     
@@ -580,7 +588,7 @@
     .back-to-top {
       position: fixed;
       bottom: 30px;
-      right: 30px;
+      left: 30px;
       background-color: var(--primary);
       color: white;
       width: 50px;
@@ -615,11 +623,6 @@
       
       .section-title h2 {
         font-size: 2.2rem;
-      }
-      
-      .language-switcher {
-        top: 90px;
-        left: 15px;
       }
     }
     
@@ -694,18 +697,18 @@
       }
       
       .language-switcher {
-        top: 80px;
-        left: 10px;
+        top: 15px;
+        padding: 4px;
       }
       
       .lang-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 0.8rem;
+        width: 35px;
+        height: 35px;
+        font-size: 0.7rem;
       }
       
       .whatsapp-btn {
-        left: 20px;
+        right: 20px;
         bottom: 20px;
         width: 55px;
         height: 55px;
@@ -713,7 +716,7 @@
       }
       
       .back-to-top {
-        right: 20px;
+        left: 20px;
         bottom: 20px;
       }
     }
@@ -736,10 +739,18 @@
       }
       
       .language-switcher {
-        flex-direction: row;
-        top: auto;
-        bottom: 100px;
-        left: 20px;
+        padding: 4px;
+        gap: 3px;
+      }
+      
+      .lang-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.65rem;
+      }
+      
+      .logo {
+        font-size: 1.5rem;
       }
     }
     
@@ -773,7 +784,7 @@
   </style>
 </head>
 <body>
-  <!-- Language Switcher -->
+  <!-- Language Switcher - Centered Position -->
   <div class="language-switcher">
     <div class="lang-btn active" id="lang-ar">عربي</div>
     <div class="lang-btn" id="lang-en">EN</div>
@@ -785,7 +796,7 @@
       <nav class="navbar">
         <div class="logo">
           <i class="fas fa-chalkboard-teacher"></i>
-          <span id="site-title">Smart Teacher</span>
+          <span id="site-title">المعلم المتميز</span>
         </div>
         
         <ul class="nav-links">
@@ -806,7 +817,7 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="container">
-      <h1 class="fade-in" id="hero-title">Smart Teacher</h1>
+      <h1 class="fade-in" id="hero-title">المعلم المتميز</h1>
       <p class="fade-in delay-1" id="hero-subtitle">التحضير الجيد هو سر نجاح الحصة… دعنا نساعدك على توفير الوقت وتحقيق أفضل النتائج 🎯</p>
       <div class="hero-btns fade-in delay-2">
         <a href="#services" class="btn" id="btn-services">اكتشف خدماتنا</a>
@@ -992,7 +1003,7 @@
         <div class="footer-about">
           <div class="footer-logo">
             <i class="fas fa-chalkboard-teacher"></i>
-            <span id="footer-title">Smart Teacher</span>
+            <span id="footer-title">المعلم المتميز</span>
           </div>
           <p id="footer-about-text">نقدم خدمات تعليمية احترافية للمعلمين والمدارس، نساعدكم في تحضير الدروس والأنشطة الإثرائية وخطط التدريس لتحقيق أفضل النتائج التعليمية.</p>
           <div class="social-links">
@@ -1023,18 +1034,18 @@
       </div>
       
       <div class="copyright">
-        <p id="copyright-text">جميع الحقوق محفوظة &copy; Smart Teacher <span id="current-year"></span></p>
+        <p id="copyright-text">جميع الحقوق محفوظة &copy; المعلم المتميز <span id="current-year"></span></p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Button -->
+  <!-- WhatsApp Button - Right Side -->
   <a href="https://wa.me/967772551220?text=اريد%20ان%20اتقدم%20على%20خدماتكم" class="whatsapp-btn" target="_blank" id="whatsapp-link">
     <i class="fab fa-whatsapp"></i>
     <span class="whatsapp-text" id="whatsapp-text">تواصل معنا</span>
   </a>
 
-  <!-- Back to Top Button -->
+  <!-- Back to Top Button - Left Side -->
   <a href="#" class="back-to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
@@ -1044,7 +1055,7 @@
     const content = {
       ar: {
         // Navigation
-        "site-title": "Smart Teacher",
+        "site-title": "المعلم المتميز",
         "nav-home": "الرئيسية",
         "nav-services": "خدماتنا",
         "nav-why": "لماذا نحن؟",
@@ -1052,7 +1063,7 @@
         "nav-footer": "تواصل معنا",
         
         // Hero Section
-        "hero-title": "Smart Teacher",
+        "hero-title": "المعلم المتميز",
         "hero-subtitle": "التحضير الجيد هو سر نجاح الحصة… دعنا نساعدك على توفير الوقت وتحقيق أفضل النتائج 🎯",
         "btn-services": "اكتشف خدماتنا",
         "btn-order": "اطلب الخدمة الآن",
@@ -1106,7 +1117,7 @@
         "submit-btn": "إرسال الطلب",
         
         // Footer
-        "footer-title": "Smart Teacher",
+        "footer-title": "المعلم المتميز",
         "footer-about-text": "نقدم خدمات تعليمية احترافية للمعلمين والمدارس، نساعدكم في تحضير الدروس والأنشطة الإثرائية وخطط التدريس لتحقيق أفضل النتائج التعليمية.",
         "footer-links-title": "روابط سريعة",
         "footer-link-home": "الرئيسية",
@@ -1118,17 +1129,17 @@
         "footer-email": "binothmany@yahoo.com",
         "footer-location": "اليمن",
         "footer-slogan": "🌟 استثمر معنا في تعليم أفضل ونجاح أكاديمي مضمون",
-        "copyright-text": "جميع الحقوق محفوظة &copy; Smart Teacher",
+        "copyright-text": "جميع الحقوق محفوظة &copy; المعلم المتميز",
         
         // WhatsApp Button
         "whatsapp-text": "تواصل معنا",
         
         // Page Title
-        "page-title": "Smart Teacher | التحضير الاحترافي للمعلمين"
+        "page-title": "المعلم المتميز | التحضير الاحترافي للمعلمين"
       },
       en: {
         // Navigation
-        "site-title": "Smart Teacher",
+        "site-title": "Distinguished Teacher",
         "nav-home": "Home",
         "nav-services": "Services",
         "nav-why": "Why Us",
@@ -1136,7 +1147,7 @@
         "nav-footer": "Contact Us",
         
         // Hero Section
-        "hero-title": "Smart Teacher",
+        "hero-title": "Distinguished Teacher",
         "hero-subtitle": "Good preparation is the secret to a successful class… Let us help you save time and achieve the best results 🎯",
         "btn-services": "Discover Our Services",
         "btn-order": "Order Service Now",
@@ -1190,7 +1201,7 @@
         "submit-btn": "Submit Request",
         
         // Footer
-        "footer-title": "Smart Teacher",
+        "footer-title": "Distinguished Teacher",
         "footer-about-text": "We provide professional educational services for teachers and schools, helping you prepare lessons, enrichment activities, and teaching plans to achieve the best educational results.",
         "footer-links-title": "Quick Links",
         "footer-link-home": "Home",
@@ -1202,13 +1213,13 @@
         "footer-email": "binothmany@yahoo.com",
         "footer-location": "Yemen",
         "footer-slogan": "🌟 Invest with us for better education and guaranteed academic success",
-        "copyright-text": "All rights reserved &copy; Smart Teacher",
+        "copyright-text": "All rights reserved &copy; Distinguished Teacher",
         
         // WhatsApp Button
         "whatsapp-text": "Contact Us",
         
         // Page Title
-        "page-title": "Smart Teacher | Professional Preparation for Teachers"
+        "page-title": "Distinguished Teacher | Professional Preparation for Teachers"
       }
     };
 
