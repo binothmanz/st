@@ -1037,6 +1037,29 @@
             </div>
             
             <div class="form-group">
+              <label for="grade" id="label-grade">الصف (اختياري)</label>
+              <select id="grade" name="grade" class="form-control">
+                <option value="" id="option-grade-default">اختر الصف (إن وجد)</option>
+                <option value="الصف الأول" id="option-grade-1">الصف الأول</option>
+                <option value="الصف الثاني" id="option-grade-2">الصف الثاني</option>
+                <option value="الصف الثالث" id="option-grade-3">الصف الثالث</option>
+                <option value="الصف الرابع" id="option-grade-4">الصف الرابع</option>
+                <option value="الصف الخامس" id="option-grade-5">الصف الخامس</option>
+                <option value="الصف السادس" id="option-grade-6">الصف السادس</option>
+                <option value="الصف السابع" id="option-grade-7">الصف السابع</option>
+                <option value="الصف الثامن" id="option-grade-8">الصف الثامن</option>
+                <option value="الصف التاسع" id="option-grade-9">الصف التاسع</option>
+                <option value="الصف العاشر" id="option-grade-10">الصف العاشر</option>
+                <option value="الصف الحادي عشر" id="option-grade-11">الصف الحادي عشر</option>
+                <option value="الصف الثاني عشر" id="option-grade-12">الصف الثاني عشر</option>
+                <option value="رياض الأطفال" id="option-grade-kg">رياض الأطفال</option>
+                <option value="مرحلة الجامعة" id="option-grade-uni">مرحلة الجامعة</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
               <label for="service" id="label-service">نوع الخدمة المطلوبة <span class="required">*</span></label>
               <select id="service" name="service" class="form-control" required>
                 <option value="" id="option-service-default">اختر الخدمة</option>
@@ -1048,11 +1071,11 @@
                 <option value="خطط علاجية" id="option-treatment-plans">خطط علاجية للطلاب الضعاف</option>
               </select>
             </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="notes" id="label-notes" class="optional-label">ملاحظات إضافية (اختياري)</label>
-            <textarea id="notes" name="notes" class="form-control" placeholder="إذا كان لديك أي ملاحظات أو تفاصيل إضافية حول الخدمة المطلوبة..."></textarea>
+            
+            <div class="form-group">
+              <label for="notes" id="label-notes" class="optional-label">ملاحظات إضافية (اختياري)</label>
+              <textarea id="notes" name="notes" class="form-control" placeholder="إذا كان لديك أي ملاحظات أو تفاصيل إضافية حول الخدمة المطلوبة..."></textarea>
+            </div>
           </div>
           
           <div class="form-group" style="margin-top: 25px; text-align: center;">
@@ -1181,6 +1204,7 @@
         "label-phone": "رقم التواصل",
         "label-role": "الصفة",
         "label-subject": "المادة",
+        "label-grade": "الصف (اختياري)",
         "label-service": "نوع الخدمة المطلوبة",
         "label-notes": "ملاحظات إضافية (اختياري)",
         "option-role-default": "اختر صفتك",
@@ -1188,6 +1212,21 @@
         "option-teacher-female": "معلمة",
         "option-school": "مدرسة",
         "option-student": "طالب",
+        "option-grade-default": "اختر الصف (إن وجد)",
+        "option-grade-1": "الصف الأول",
+        "option-grade-2": "الصف الثاني",
+        "option-grade-3": "الصف الثالث",
+        "option-grade-4": "الصف الرابع",
+        "option-grade-5": "الصف الخامس",
+        "option-grade-6": "الصف السادس",
+        "option-grade-7": "الصف السابع",
+        "option-grade-8": "الصف الثامن",
+        "option-grade-9": "الصف التاسع",
+        "option-grade-10": "الصف العاشر",
+        "option-grade-11": "الصف الحادي عشر",
+        "option-grade-12": "الصف الثاني عشر",
+        "option-grade-kg": "رياض الأطفال",
+        "option-grade-uni": "مرحلة الجامعة",
         "option-service-default": "اختر الخدمة",
         "option-lesson-prep": "تحضير دروس",
         "option-activities": "أنشطة إثرائية",
@@ -1270,6 +1309,7 @@
         "label-phone": "Contact Number",
         "label-role": "Role",
         "label-subject": "Subject",
+        "label-grade": "Grade (Optional)",
         "label-service": "Required Service Type",
         "label-notes": "Additional Notes (Optional)",
         "option-role-default": "Select Your Role",
@@ -1277,6 +1317,21 @@
         "option-teacher-female": "Female Teacher",
         "option-school": "School",
         "option-student": "Student",
+        "option-grade-default": "Select Grade (if applicable)",
+        "option-grade-1": "First Grade",
+        "option-grade-2": "Second Grade",
+        "option-grade-3": "Third Grade",
+        "option-grade-4": "Fourth Grade",
+        "option-grade-5": "Fifth Grade",
+        "option-grade-6": "Sixth Grade",
+        "option-grade-7": "Seventh Grade",
+        "option-grade-8": "Eighth Grade",
+        "option-grade-9": "Ninth Grade",
+        "option-grade-10": "Tenth Grade",
+        "option-grade-11": "Eleventh Grade",
+        "option-grade-12": "Twelfth Grade",
+        "option-grade-kg": "Kindergarten",
+        "option-grade-uni": "University Level",
         "option-service-default": "Select Service",
         "option-lesson-prep": "Lesson Preparation",
         "option-activities": "Enrichment Activities",
@@ -1477,7 +1532,7 @@
       submitBtn.textContent = currentLang === 'ar' ? 'جاري فتح الواتساب...' : 'Opening WhatsApp...';
       submitBtn.disabled = true;
       
-      // Prepare WhatsApp message (email is optional - can be empty)
+      // Prepare WhatsApp message (email and grade are optional - can be empty)
       const whatsappMessage = currentLang === 'ar' 
         ? `📋 *طلب خدمة جديدة من موقع المعلم المتميز*\n\n` +
           `👤 *الاسم:* ${formDataObj.name}\n` +
@@ -1485,6 +1540,7 @@
           (formDataObj.email && formDataObj.email.trim() !== '' ? `📧 *البريد الإلكتروني:* ${formDataObj.email}\n` : '') +
           `🎓 *الصفة:* ${formDataObj.role}\n` +
           `📚 *المادة:* ${formDataObj.subject}\n` +
+          (formDataObj.grade && formDataObj.grade.trim() !== '' ? `🏫 *الصف:* ${formDataObj.grade}\n` : '') +
           `🛠️ *نوع الخدمة:* ${formDataObj.service}\n` +
           (formDataObj.notes && formDataObj.notes.trim() !== '' ? `📝 *ملاحظات إضافية:* ${formDataObj.notes}` : '')
         : `📋 *New Service Request from Distinguished Teacher Website*\n\n` +
@@ -1493,6 +1549,7 @@
           (formDataObj.email && formDataObj.email.trim() !== '' ? `📧 *Email:* ${formDataObj.email}\n` : '') +
           `🎓 *Role:* ${formDataObj.role}\n` +
           `📚 *Subject:* ${formDataObj.subject}\n` +
+          (formDataObj.grade && formDataObj.grade.trim() !== '' ? `🏫 *Grade:* ${formDataObj.grade}\n` : '') +
           `🛠️ *Service Type:* ${formDataObj.service}\n` +
           (formDataObj.notes && formDataObj.notes.trim() !== '' ? `📝 *Additional Notes:* ${formDataObj.notes}` : '');
       
